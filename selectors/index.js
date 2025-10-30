@@ -20,3 +20,33 @@ var g=document.querySelectorAll('h4')
 console.log(g)
 var h=document.querySelectorAll('.one')
 console.log(h)
+//dom traversing
+var div2=document.getElementById('div2')
+console.log(div2)
+var first=div2.firstElementChild
+console.log(first)
+var last=div2.lastElementChild
+console.log(last)
+var previous=div2.previousElementSibling
+console.log(previous)
+var next=div2.nextElementSibling
+console.log(next)
+var newelement=document.createElement('h1')
+newelement.textContent='this is a new element'
+newelement.setAttribute('id',newelement)
+newelement.setAttribute('class',newelement)
+div2.appendChild(newelement)
+console.log(newelement)
+var h1=document.createElement('h1')
+h1.textContent="this is heading tag"
+console.log(h1)
+var div1=document.getElementById('div1')
+div1.appendChild(h1)
+var p=div1.firstElementChild
+console.log(p)
+div1.insertBefore(h1,p)
+div1.appendChild(h1)
+var first1=document.getElementById('first')
+div1.replaceChild(h1,first)
+
+
