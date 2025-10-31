@@ -46,7 +46,46 @@ var p=div1.firstElementChild
 console.log(p)
 div1.insertBefore(h1,p)
 div1.appendChild(h1)
-var first1=document.getElementById('first')
-div1.replaceChild(h1,first)
+// var first1=document.getElementById('first')
+// div1.replaceChild(h1,first)
+//eventhanlders
+// div2.addEventListener("click",function(){
+//     alert("this is alert message")
+// })
+function clickEvent(){
+    alert("this ia alert")
+}
+div2.addEventListener('click',clickEvent)
 
+var btn=document.getElementById('click')
+//btn.addEventListener
+function btnclick(){
+    alert("button clicked")
+}
+btn.addEventListener('click',btnclick,true)
 
+//getting outer
+var div=document.getElementById('outer')
+//capturing
+div.addEventListener("click",function(){
+    alert('div capturing')
+})
+//bubbling
+div.addEventListener("click",function(){
+    alert('div bubbling')
+})
+//table
+var tab=document.getElementById('table')
+tab.addEventListener('click',function btn(){
+    alert("table clicked")
+})
+//ol
+var ol=document.getElementById('ollist')
+ol.addEventListener('click',function list(){
+    alert('list clicked')
+})
+//ul
+var ul=document.getElementById('ullist')
+ul.addEventListener('click',function ul(){
+    alert('ul clicked')
+})
